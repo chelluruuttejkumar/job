@@ -1,0 +1,139 @@
+import React from 'react'
+import style from"./job.module.css"
+import pic from "./images/mountain.jpg"
+import pic1 from "./images/mountain1.jpg"
+import pic2 from "./images/mountain2.avif"
+const Job = () => {
+  return (
+    <div>
+      
+      <section id={style.firstimage}>
+      <img src={pic}/>
+      <nav>
+        <h1 className={style.firsttext}>Los angeles mountain</h1>
+      </nav>
+      <article id ={style.secondtext}>
+        <h2>Los angeles mountain                   1.home 2.history</h2>
+      </article>
+      </section>
+      
+
+      <article id={style.secondimage}>
+      <img src={pic1}/>
+      <nav id ={style.thirdtext}>
+        <h3>01.HISTORY</h3>
+        <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5> 
+          <h5>Minus hic explicabo</h5>
+      </nav>
+      <article className={style.fourthtext}>
+      <h1>02.CLIMB</h1>
+      </article>
+
+      
+      </article>
+      <nav id={style.thirdimage}>
+      <img src={pic}/>
+      <section className={style.fifthtext}>
+        <h1>02.SCHELUDE</h1>
+        <h4>25-06         xyz</h4>
+        <h4>26-06         abc</h4>
+        <h4>27-06         cyz</h4>
+      </section>
+      </nav>
+      
+
+    </div>
+  )
+}
+
+export default Job
+
+
+
+
+css:
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ #firstimage{
+    height: 70px;
+    width: 100%;
+    padding: 15%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    text-align: center;
+ }
+.firsttext
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+#secondtext{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    left :16px;
+    color: black;
+    font-weight: bold;
+    
+    
+}
+
+ #secondimage
+ {
+    height: 70px;
+    width: 100%;
+    padding: 15%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    position: relative;
+    /* background-color: aqua; */
+}
+#thirdtext{
+    position: absolute;
+    top: 100px;
+    left: 460px;
+}
+
+.fourthtext{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    left: 16px;
+    font-size: 20px;
+}
+#thirdimage{
+    height: 70px;
+    width: 100%;
+    padding: 15%;
+    margin: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+.fifthtext{
+    position: absolute;
+    top: 100px;
+    left: 460px;
+    border: 5px solid white;
+}
+
+
+
+
